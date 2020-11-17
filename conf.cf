@@ -1,0 +1,5 @@
+# 0 deactivated, 1 activated
+USE_UPPERCASE=0
+
+# 0 deactivated, 1 activated
+USE_COLORS=1
