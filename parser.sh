@@ -2,11 +2,11 @@
 
 CONFIGURATION_FILE="$1"
 
-# ------------------------------- TESTES --------------------------------------#
+# ------------------------------- TESTES --------------------------------------------------- #
 [ ! -e "$CONFIGURATION_FILE" ] && echo "ERROR. Configuration file does not exist." && exit 1
 [ ! -r "$CONFIGURATION_FILE" ] && echo "ERROR. No access to configuration file."   && exit 1
 [ ! -x "$(which lynx)" ] && sudo apt install lynx -y # lynx not installed
-# ---------------------------------------------------------------------------- #
+# ------------------------------------------------------------------------------------------ #
 
 while read -r line
 do
