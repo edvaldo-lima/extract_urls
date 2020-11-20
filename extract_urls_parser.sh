@@ -44,7 +44,7 @@ eval $(./parser.sh $CONFIGURATION_FILE)
 # ------------------------------------------------------------------------ #
 
 # ------------------------------- EXECUÇÃO ------------------------------------#
-for i in {1..1} # loop through first 10 pages and save results to a file.
+for i in {1..10} # loop through first 10 pages and save results to a file.
 do
   lynx -source "https://www.ted.com/talks?language=en&page=$i&sort=popular" |
   grep "href='/talks/" |
